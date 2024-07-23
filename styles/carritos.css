@@ -24,7 +24,7 @@ body {
         font-weight: bold;
         margin-bottom: 40px;
         padding-left: 20%;
-        font-size: 1.25vw;
+        font-size: 2.5vw;
     }
     img {
         padding:0.3rem;
@@ -35,6 +35,9 @@ body {
     display: flex;
     flex-direction: column;
     padding-left:  20%;
+}
+.navegacion .lista-navegacion .enlaces{
+    margin-top: 2vh;
 }
 .navegacion .lista-navegacion  .enlace-principal {
     background-color: #d3eaec;
@@ -59,7 +62,7 @@ body {
     text-decoration: none;
     width: 100%;
     color:  #1c6d45;
-    line-height: 30px;
+    
     font-size: 1.5vw;
    
 }
@@ -101,6 +104,7 @@ body {
     border-radius: 25px;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    justify-content: center;
 
     h2 {
         padding-left: 3%;
@@ -118,15 +122,241 @@ body {
     height: 20%;
     display: flex;
     justify-content: space-around;
-    background-color: #307560;
+    border: 1px solid #1c6d45;
     border-radius: 10px;
     margin: 2vw;
+    background-color: #FEEFEF;
+    color: #1c6d45;
 }
 .caja .img-article {
-    width: 15vh
+    width: 15vh;
+    height: 15vh;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
 
 }
 
+.Cantidad p span {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+}
+.text {
+    margin-left: 3.4%;
+    color: #1c6d45;
+}
 .caja .img-article-eliminar {
-    width: 15vh;
+    width: 5vw;
+    height: 10vh;
+    display: flex;
+    margin-top:  2vh;
+}
+
+.botons {
+    display: flex;
+   justify-content: center;
+   margin-bottom: 2vh;
+   column-gap: 42%;
+}
+
+.botons .trash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    button {
+        background-color: #1c6d45;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 5vh;
+    }
+}
+
+.botons .buy-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    background-color: #FEEFEF;
+    width: 20vw;
+    height: 10vh;
+    column-gap: 20px;
+    border: 1px solid #1c6d45;
+    border-radius: 10px;
+}
+
+.botons .buy-now p {
+    color: #307560;
+    padding-left: 5%;
+}
+
+.botons .buy-now button {
+    height: auto;
+    background-color: #1c6d45;
+    color: white;
+    border: none;
+    height: 5vh;
+    border-radius: 5px;
+
+}
+
+@media (max-width:768px) {
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        width: 20vw;
+        h2 {
+            color: #307560;
+            font-weight: bold;
+            margin-bottom: 40px;
+            padding-left: 20%;
+            font-size: 1rem;
+        }
+        img {
+            padding:0.3rem;
+            align-self: center;
+        }
+    }
+    .navegacion .lista-navegacion{
+        display: flex;
+        flex-direction: column;
+        padding-left:  20%;
+        
+    }
+    .navegacion .lista-navegacion .enlaces{
+        margin-top: 2vh;
+    }
+    .navegacion .lista-navegacion  .enlace-principal {
+        background-color: #d3eaec;
+        border-top:  1px solid #307560;
+        border-bottom:  1px solid #307560;
+        border-left:  1px solid #307560;
+        a {
+            color: #307560;
+            font-size: 1rem;
+        }
+    }
+    
+    .navegacion .lista-navegacion .enlace-h:hover {
+        background-color: #d3eaec;
+        border-top:  1px solid #307560;
+        border-bottom:  1px solid #307560;
+        border-left:  1px solid #307560;
+        a {
+            color: #307560;
+            font-size: 1rem;
+        }
+    }
+    .navegacion .lista-navegacion a {
+        text-decoration: none;
+        width: 100%;
+        color:  #1c6d45;
+        line-height: 30px;
+        font-size: 1rem;
+       
+    }
+    
+    
+    .navegacion .carrito {
+        padding-left: 20%;
+        margin-top: 18vh;
+    }
+    .navegacion .carrito a{
+        margin-top: 50px;
+        text-decoration: none;
+        color: #1c6d45;
+        font-size: 1rem;
+        span {
+            background-color: #d3eaec;
+            color: #113d09;
+            border: 1px solid #113d09;
+            padding: 5px;
+            border-radius:  5px;
+            font-size: 1rem;
+            margin: 2vh;
+        }
+    }
+    
+    .navegacion .water-mark {
+        padding-left: 20%;
+        margin-top: 15vh;
+        color: #113d09;
+        font-size: 1rem;
+    }
+
+    .container-boxs {
+        background-color: #FEFEFE;
+        border: 2px solid #307560;
+        width: 75vw;
+        height: max-content;
+        border-radius: 25px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+    
+        h2 {
+            padding-left: 3%;
+            color: #1c6d45 ;
+            margin: 10px 0;
+        }
+    }
+    .container-products {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    
+    
+    .product {
+        width:14vw;
+        height:auto;
+        margin: 20px;
+        background-color: #d3eaec;
+        border: 1px solid #307560;
+        h5 {
+            color: #113d09;
+            font-size:  3vw;
+        }
+        .img-product {
+            width: 14vw;
+            height: 10vh;
+        }
+    }
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        p {
+            color: #113d09;
+            font-weight: 400;
+            
+        }
+    
+        button {
+            background-color:  #307560;
+            color: white;
+            height: 20px;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+        }
+    
+        button:hover {
+            background-color: #d3eaec;
+            cursor: pointer;
+        }
+    }
 }
